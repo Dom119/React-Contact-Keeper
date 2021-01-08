@@ -1,0 +1,29 @@
+Step 1: Make Routes
+Step 2: Connect the database
+Step 3: create database:
+  3.1: create module for database
+  3.2: use validator to check the database send from front end to back end
+  3.3: if (3.2) is fine then send the Harsh the password and send it to database.
+  3.4: Login: password compared by bcryptjs
+  3.5: Compare Tokens (back end and frond end)
+
+Note: 
+1. Token vs password
+- when we log in, it matches the password
+- if correct, that needs a 'secret key' from the browser, together, server send back a Token
+- any further requested from that point, we need to use that token to access any function of the web
+
+Step 4: Build the front-end with REACT
+  4.1. delete the git by rm -rf .git, delete .gitignore, add more to .gitignore of main folder
+  4.2. install dependencies for client side
+
+//Heroku deployment
+-heroku server hosts app but does not have a shell to install database
+-change the config to production
+-change the script to install everything on heroku server
+--heroku --version
+--heroku Login
+--heroku create
+--GIT commit
+--heroku git:remote -a 'the name of the heroku folder'
+--git push heroku master --> it will run the postbuild script and server.js will got hit. and then it is.
